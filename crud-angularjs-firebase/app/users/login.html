@@ -1,0 +1,15 @@
+<div ng-include="'app/shared/app-navbar.html'"></div>
+
+<div class="container">
+  <form ng-submit="signIn(user)" method="post" id="userLoginForm">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Email</span>
+      <input type="email" class="form-control" placeholder="E-mail" ng-model="user.email" required>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon">Password</span>
+      <input type="password" class="form-control" placeholder="Password" ng-model="user.password" required>
+    </div><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

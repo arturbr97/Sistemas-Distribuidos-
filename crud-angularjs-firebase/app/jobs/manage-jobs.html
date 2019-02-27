@@ -1,0 +1,24 @@
+<div ng-include="'app/shared/manage-navbar.html'"></div>
+<div class="container">
+	<h1>Manage jobs</h1>
+	<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Author</th>
+      <th scope="col">Language</th>
+      <th scope="col">Github</th>
+      <th scope="col">#</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="(key, job) in jobs">
+      <td>{{ job.name }}</td>
+      <td>{{ job.author }}</td>
+      <td>{{ job.language }}</td>
+      <td>{{ job.github }}</td>
+      <td><a href="" class="btn btn-danger" ng-click="deleteJob(keys[key])">Delete</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>

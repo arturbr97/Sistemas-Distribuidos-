@@ -1,0 +1,24 @@
+<div ng-include="'app/shared/manage-navbar.html'"></div>
+<div class="container">
+	<h1>New job</h1>
+	<form ng-submit="newJob(job)" method="post" id="userJobForm">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Name</span>
+      <input type="text" class="form-control" placeholder="Name" ng-model="job.name" required>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Author</span>
+      <input type="text" class="form-control" placeholder="Author" ng-model="job.author" required>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Language</span>
+      <input type="text" class="form-control" placeholder="Language" ng-model="job.language" required>
+    </div><br>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Github</span>
+      <input type="text" class="form-control" placeholder="Github" ng-model="job.github" required>
+    </div><br>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+  </form>
+</div>
