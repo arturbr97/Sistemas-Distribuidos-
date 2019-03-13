@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ConexaoSockets</string>
+    <string name="text_btn_finalizar">FINALIZAR</string>
+    <string name="text_btn_iniciar">INICIAR</string>
+    <string name="text_btn_enviar">ENVIAR</string>
+</resources>
